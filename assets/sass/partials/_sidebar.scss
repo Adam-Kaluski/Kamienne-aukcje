@@ -1,0 +1,95 @@
+@use '../abstaract/' as *;
+
+.sidebar {
+    background-color: $sidebar-bg-color;
+    font-family: $secondary-font;
+    overflow-y: scroll;
+    position: absolute;
+    margin: 80px 0 0 0;
+    
+
+    @include scrollbars(5px, $sidebar-theme-color, transparent);
+
+&__mainMenu {
+    @include resetList;
+}
+
+&__submenu {
+    @include resetList;
+}
+
+&__labelText {
+    outline: 2px solid #000;
+}
+
+
+
+    &__search {
+        text-align: center;
+       margin: 20px 0 30px 0;
+        position: relative;
+    
+    }
+
+    &__labelText {
+        width: 250px;
+    }
+
+
+    &__row {
+        display: flex;
+        justify-content: center;
+        margin: 10px 0;
+        width: 100%;
+        
+
+        &:last-child {
+            margin: 0 0 20px 0;
+        }
+    }
+
+    &__rowLink {
+        color: #000000;
+        display: flex;
+        font-size: 16px;
+        width: 100%;
+        margin: 0 40px;
+        transition: 300ms;
+        padding: 5px;
+
+        &:hover {
+            background-color: #000000;
+            color: #fff;
+        }
+        
+        &--LinkTitle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #a19e9e;
+            height: 30px;
+            width: 100%;
+            color: #fff;
+        }
+    }
+
+    &__icon {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    &__button {
+        font-size: 16px;
+        position: absolute;
+        inset: 50% 24px auto auto;
+        translate: 0 -50%;
+        border: none;
+        cursor: pointer;
+    }
+
+
+
+
+}

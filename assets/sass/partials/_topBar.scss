@@ -1,0 +1,50 @@
+@use '../abstaract/' as *;
+
+.bar {
+    height: 150px;
+    width: 100%;
+    padding: 30px;
+    background-color: #000;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+
+    &__search {
+        width: 270px;
+        position: relative;
+
+        @include big-tablet {
+            width: 180px;
+        }
+        
+    }
+
+    &__logo {
+       position: absolute;
+       inset: 50% auto auto 50%;
+       translate: -50% -50%;
+       
+    }
+
+    &__labelSearch {
+        outline: 4px solid #fff;
+        border-radius: 7px;
+        width: 100%;
+        height: 30px;
+        position: relative;
+    }
+
+    &__button {
+        position: absolute;
+        inset: 50% 3px auto auto;
+        translate: 3px -55%;
+        border: none;
+        color: #000;
+        font-size: 20px;
+        cursor: pointer;
+        
+    }
+
+
+}

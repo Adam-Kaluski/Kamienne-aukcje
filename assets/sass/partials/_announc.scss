@@ -1,0 +1,106 @@
+@use '../abstaract/' as *;
+
+.mainContent {
+  
+.container {
+
+    &__allElements {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+
+    
+    }
+
+
+    &__searchBar {
+        width: 100%;
+        display: flex;
+        margin: 30px -100px 10px -100px;
+
+        @include large-desktop {
+            size: 20%;
+        }
+    }
+    
+&__element {
+    display: flex;
+    width:25%;
+    border: 2px solid #000;
+    transition: 300ms;
+    margin: 10px 0;
+    height: 100%;
+    padding: 0 15px;
+    
+    &:hover {
+        scale: 1.1;
+    }
+
+    @include large-desktop {
+        width: calc((100%/3) - 20px);
+        overflow-x:auto;
+        padding: 0;
+    }
+
+    @include big-tablet {
+        width: calc((100%/2) - 20px);
+    }
+
+    @include smartphone {
+        width: calc(100% - 20px);
+    }
+}
+
+&__elementText {
+    padding: 0 50px;
+    background-color: #C4B8E6;
+}
+
+&__elementImg {
+       display: flex;
+       justify-content: center;
+}
+
+
+
+&__text {
+    @include resetList;
+}
+
+&__title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    &:last-child {
+        border-top: 1px solid #000;
+        width: 100%;
+        
+    }
+}
+
+&__titleLink {
+    color: #000;
+    font-size: 20px;
+
+    @include smartphone {
+        font-size: 28px;
+    }
+}
+
+&__price {
+    color: #000;
+    font-size: 18px;
+
+    @include smartphone {
+        font-size: 26px;
+    }
+}
+
+
+
+
+}
+
+
+}
