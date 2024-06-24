@@ -21,6 +21,10 @@
             size: 20%;
         }
     }
+
+    &__searchBarList {
+        @include resetList;
+    }
     
 &__element {
     display: flex;
