@@ -11,11 +11,15 @@
 
 
     &__search {
-        width: 270px;
+        width: 250px;
         position: relative;
 
         @include big-tablet {
-            width: 180px;
+            width: 120px;
+        }
+
+        @include smartphone {
+            inset: -60% auto auto 70%;
         }
         
     }

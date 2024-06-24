@@ -6,8 +6,9 @@
     &__allElements {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
+
     
     }
 
@@ -34,17 +35,17 @@
     }
 
     @include large-desktop {
-        width: calc((100%/3) - 20px);
+        width: calc((100%/3) - (4 * $gutter-gap));
         overflow-x:auto;
-        padding: 0;
+        
     }
 
     @include big-tablet {
-        width: calc((100%/2) - 20px);
+        width: calc((100%/2) - (4 * $gutter-gap));
     }
 
     @include smartphone {
-        width: calc(100% - 20px);
+        width: calc(100% - (4 * $gutter-gap));
     }
 }
 
