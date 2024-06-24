@@ -13,11 +13,11 @@ img {
 .sidebar {
     width: $sidebar-width;
     max-width: $sidebar-max-width;
-    height: 100%;
+    height: 70vh;
     margin: 0 auto;
 
     @include large-desktop {
-        width: $sidebar-width - 150px;
+        // width: $sidebar-width - 150px;
         overflow-x: hidden;
     }
 
@@ -42,3 +42,4 @@ img {
     max-width: $max-mainContent-width;
     width: 100%;
 }
+

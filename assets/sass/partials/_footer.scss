@@ -3,4 +3,19 @@
 .footer {
     background-color: #000;
     height: 150px;
+    margin: 100px 0 0 0;
+
+
+&__text {
+    height: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $secondary-font;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
 }

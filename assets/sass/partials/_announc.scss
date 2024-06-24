@@ -1,6 +1,6 @@
 @use '../abstaract/' as *;
 
-.homepage {
+.home {
   
 
     &__allElements {
@@ -16,7 +16,7 @@
     &__searchBar {
         // width: $max-mainContent-width;
         display: flex;
-        margin: 30px 0 10px 0;
+        margin: 30px 0 40px 0;
         @include large-desktop {
             size: 20%;
         }
@@ -97,6 +97,11 @@
     @include smartphone {
         font-size: 26px;
     }
+}
+
+&__valueRow {
+    margin: 0 $gutter-gap;
+
 }
 
 
