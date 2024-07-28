@@ -12,7 +12,7 @@ img {
 
 .sidebar {
     width: $sidebar-width;
-    max-width: $sidebar-max-width;
+    // max-width: $sidebar-max-width;
     height: 70vh;
     margin: 0 auto;
 
@@ -31,9 +31,8 @@ img {
 .container {
     font-family: $secondary-font;
     margin: 0 auto;
-    max-width: $max-container-width;
     width: 100%;
-    padding: 0 15px;
+    // padding: 0 15px;
 }
 
 .homepage {

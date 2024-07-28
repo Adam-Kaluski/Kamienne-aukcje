@@ -1,11 +1,12 @@
 @use '../abstaract/' as *;
 
 .sidebar {
+    width: 20vw;
     background-color: $sidebar-bg-color;
     font-family: $secondary-font;
     overflow-y: scroll;
     margin: 80px 0 0 0;
-    
+
 
     @include scrollbars(5px, $sidebar-theme-color, transparent);
 

@@ -1,6 +1,21 @@
 @use '../abstaract/' as *;
 
-.home {
-    // width: $homepage-width;
-    // margin: 0 0 0 $sidebar-width;
+.auc {
+    display: flex;
+    
+    &__home {
+        width: $homepage-width;  
+        
+        @include smartphone {
+            width: 100%;
+        }
+    }
+
+    &__sidebar {
+        width: 20%;
+
+        @include smartphone {
+            width: 0;
+        }
+    }
 }
